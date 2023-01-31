@@ -1,0 +1,801 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Anomalies &#8212; Portfolio Earth System Components Winter term 2022/23</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Teleconnections: Global correlation maps with the Nino3.4 index" href="06-Global_correlation_maps.html" />
+    <link rel="prev" title="Computation concepts" href="04-Computation-concepts.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/pic.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Portfolio Earth System Components Winter term 2022/23</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to the Portfolio for the course Earth System Components Winter term 2022/23
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="first.html">
+   Question 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="second.html">
+   How does ozone interact with UV radiation i.e. what is the physical-chemical reaction behind that interaction?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="third.html">
+   NAO &amp; AO
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="fourth.html">
+   What mechanisms explain the existence of ocean gyres?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="01_intro_ext.html">
+   Introduction to JupyterLab, Python and Conda
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02_Energy-balance.html">
+   The Energy balance of the earth
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03-Introduction-to-xarray.html">
+   Xarray and how to explore variables in the Earth System Data Cube
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04-Computation-concepts.html">
+   Computation concepts
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Anomalies
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06-Global_correlation_maps.html">
+   Teleconnections: Global correlation maps with the Nino3.4 index
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08-Climate_classifications.html">
+   Climate classifications
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/LFT-W47/Portfolio_ESC/master?urlpath=tree/docs/05-Anomalies.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/LFT-W47/Portfolio_ESC"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/LFT-W47/Portfolio_ESC/issues/new?title=Issue%20on%20page%20%2F05-Anomalies.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/05-Anomalies.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-is-an-anomaly">
+   What is an anomaly?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#annual-temperature-anomaly-of-leipzig">
+   Annual temperature anomaly of Leipzig
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#enso">
+   ENSO
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#which-different-indices-are-used-to-monitor-the-tropical-pacific">
+     Which different indices are used to monitor the tropical Pacific?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#calculate-the-nino-3-4-index">
+     Calculate the Nino 3.4 index
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#plotting-the-nino3-4-indice-against-other-variables">
+     Plotting the Nino3.4 indice against other variables
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Anomalies</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-is-an-anomaly">
+   What is an anomaly?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#annual-temperature-anomaly-of-leipzig">
+   Annual temperature anomaly of Leipzig
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#enso">
+   ENSO
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#which-different-indices-are-used-to-monitor-the-tropical-pacific">
+     Which different indices are used to monitor the tropical Pacific?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#calculate-the-nino-3-4-index">
+     Calculate the Nino 3.4 index
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#plotting-the-nino3-4-indice-against-other-variables">
+     Plotting the Nino3.4 indice against other variables
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="anomalies">
+<h1>Anomalies<a class="headerlink" href="#anomalies" title="Permalink to this headline">#</a></h1>
+<p>The goals of today’s exercise are to explain and calculate the following:</p>
+<ul class="simple">
+<li><p>What is an anomaly?</p></li>
+<li><p>Example of the annual temperature anomaly of Leipzig</p></li>
+<li><p>Hands on: Calculate the monthly SST anomalies for the Nino 3.4 index</p></li>
+<li><p>Homework: Correlate the index with the SOI (Southern Oscillation Index) and other vegetational or meteorological variables in different regions</p></li>
+</ul>
+<section id="what-is-an-anomaly">
+<h2>What is an anomaly?<a class="headerlink" href="#what-is-an-anomaly" title="Permalink to this headline">#</a></h2>
+<p><strong>TODO</strong>: Type your answer here</p>
+<ul class="simple">
+<li><p>something that deviates from what is standard, normal, or expected.</p></li>
+<li><p>X - X(average)</p></li>
+<li><p>deviation from the common rule</p></li>
+</ul>
+</section>
+<section id="annual-temperature-anomaly-of-leipzig">
+<h2>Annual temperature anomaly of Leipzig<a class="headerlink" href="#annual-temperature-anomaly-of-leipzig" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import modules</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">xarray</span> <span class="k">as</span> <span class="nn">xr</span>
+<span class="kn">import</span> <span class="nn">fsspec</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load ESDC from SC cluster</span>
+<span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_zarr</span><span class="p">(</span><span class="n">fsspec</span><span class="o">.</span><span class="n">get_mapper</span><span class="p">(</span><span class="s1">&#39;/work/users/gy963viny/public/EarthSystemDataCube/v2.1.1/esdc-8d-0.25deg-184x90x90-2.1.1.zarr/&#39;</span><span class="p">),</span> \
+                  <span class="n">consolidated</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Select the area of Leipzig</span>
+<span class="n">temp_leipzig</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">air_temperature_2m</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">lat</span><span class="o">=</span><span class="p">[</span><span class="mf">51.3</span><span class="p">],</span> <span class="n">lon</span><span class="o">=</span><span class="p">[</span><span class="mf">12.3</span><span class="p">],</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;nearest&#39;</span><span class="p">)</span>
+<span class="c1"># The &#39;nearest&#39; method still include the latitude and longitude and not only the variable. Therefore we extract lat=0 and lon=0</span>
+<span class="n">temp_leipzig</span> <span class="o">=</span> <span class="n">temp_leipzig</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">lat</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">lon</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">temp_leipzig</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x14c8fde35910&gt;]
+</pre></div>
+</div>
+<img alt="_images/05-Anomalies_3_1.png" src="_images/05-Anomalies_3_1.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Resample to annual data</span>
+<span class="n">annual_temp_leipzig</span> <span class="o">=</span> <span class="n">temp_leipzig</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="s1">&#39;Y&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">annual_temp_leipzig</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x14c8fa586d60&gt;]
+</pre></div>
+</div>
+<img alt="_images/05-Anomalies_4_1.png" src="_images/05-Anomalies_4_1.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Calculate the anomaly anomaly = x - x_bar</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">annual_temp_leipzig</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+<span class="n">anomaly_temp</span> <span class="o">=</span> <span class="n">annual_temp_leipzig</span> <span class="o">-</span> <span class="n">annual_temp_leipzig</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">anomaly_temp</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;xarray.DataArray &#39;air_temperature_2m&#39; ()&gt;
+array(282.9372, dtype=float32)
+Coordinates:
+    lat      float64 51.38
+    lon      float64 12.38
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x14c8fa517b20&gt;]
+</pre></div>
+</div>
+<img alt="_images/05-Anomalies_5_2.png" src="_images/05-Anomalies_5_2.png" />
+</div>
+</div>
+<p>The anomaly always depends on the reference period. In our example we calculated the the reference period from 1981-2019.
+You find reference values for time periods between, e.g. 1961-1990, here <a class="reference external" href="https://www.dwd.de/DE/leistungen/klimadatendeutschland/vielj_mittelwerte.html">https://www.dwd.de/DE/leistungen/klimadatendeutschland/vielj_mittelwerte.html</a> (sorry, only German) and can choose the mean average temperature (1961-1990) from this table: <a class="reference external" href="https://www.dwd.de/DE/leistungen/klimadatendeutschland/mittelwerte/temp_6190_fest_html.html;jsessionid=9E9C49B729A580F1DBA49E38B806D402.live11051?view=nasPublication&amp;nn=16102">https://www.dwd.de/DE/leistungen/klimadatendeutschland/mittelwerte/temp_6190_fest_html.html;jsessionid=9E9C49B729A580F1DBA49E38B806D402.live11051?view=nasPublication&amp;nn=16102</a>.
+It is 9.1<span class="math notranslate nohighlight">\(^\circ\)</span>C. Now we can calculate the anomaly also in respect to this reference as well:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># anomaly with respect to reference period between 1961-1990</span>
+<span class="n">anomaly_temp</span> <span class="o">=</span> <span class="n">annual_temp_leipzig</span> <span class="o">-</span> <span class="p">(</span><span class="mf">9.1</span><span class="o">+</span><span class="mf">273.15</span><span class="p">)</span>
+<span class="n">anomaly_temp</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x14c8fa493c40&gt;]
+</pre></div>
+</div>
+<img alt="_images/05-Anomalies_7_1.png" src="_images/05-Anomalies_7_1.png" />
+</div>
+</div>
+</section>
+<section id="enso">
+<h2>ENSO<a class="headerlink" href="#enso" title="Permalink to this headline">#</a></h2>
+<section id="which-different-indices-are-used-to-monitor-the-tropical-pacific">
+<h3>Which different indices are used to monitor the tropical Pacific?<a class="headerlink" href="#which-different-indices-are-used-to-monitor-the-tropical-pacific" title="Permalink to this headline">#</a></h3>
+<p><strong>TODO</strong>: Type your answer here</p>
+<ul class="simple">
+<li><p>Combined Variable El Niño index</p></li>
+<li><p>Southern Oscillation Index</p></li>
+<li><p>Equatorial Southern Oscillation Index</p></li>
+<li><p>Sea Surface Temperature Timeseries</p></li>
+<li><p>Oceanic Niño Index (ONI)</p></li>
+<li><p>and more…</p></li>
+</ul>
+</section>
+<section id="calculate-the-nino-3-4-index">
+<h3>Calculate the Nino 3.4 index<a class="headerlink" href="#calculate-the-nino-3-4-index" title="Permalink to this headline">#</a></h3>
+<p>Find more information on the indices and an example of the sea surface temperature (SST) anomalies here: <a class="reference external" href="https://climatedataguide.ucar.edu/climate-data/nino-sst-indices-nino-12-3-34-4-oni-and-tni">https://climatedataguide.ucar.edu/climate-data/nino-sst-indices-nino-12-3-34-4-oni-and-tni</a>.</p>
+<p><strong>TODO</strong>: Determine the Nino 3.4 index by the sea surface temperature anomalies for the time period that is covered by the ESDC. You are encouraged to think about your own solution and implement your ideas. These steps are only one example to solve this task. Think about the steps before without programming. Then start implementing your steps.</p>
+<p>One solution could look like this:</p>
+<ol class="simple">
+<li><p>Select the region of the Nino3.4 (5N-5S, 170W-120W) from the ESDC</p></li>
+<li><p>Choose the variable <code class="docutils literal notranslate"><span class="pre">analysed_sst</span></code></p></li>
+<li><p>Resample the data to monthly data</p></li>
+<li><p>Calculate the anomalies in this region (still 3D)</p></li>
+<li><p>Calculate the mean of this anomaly area</p></li>
+<li><p>Smooth your data with a running window of 5 months</p></li>
+<li><p>Identify strong El Nino and La Nina periods in the plot</p></li>
+</ol>
+<p>Programming hints are below the next cell.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sst</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">analysed_sst</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">lat</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">5</span><span class="p">),</span> <span class="n">lon</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="o">-</span><span class="mi">170</span><span class="p">,</span> <span class="o">-</span><span class="mi">120</span><span class="p">))</span>
+<span class="n">sst</span> <span class="o">=</span> <span class="n">sst</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="s2">&quot;M&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="s1">&#39;time&#39;</span><span class="p">)</span>
+<span class="n">sst_average</span> <span class="o">=</span> <span class="n">sst</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;time.month&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="s2">&quot;time&quot;</span><span class="p">)</span>
+<span class="n">sst_anomaly</span> <span class="o">=</span> <span class="n">sst</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;time.month&quot;</span><span class="p">)</span> <span class="o">-</span> <span class="n">sst_average</span>
+<span class="n">sst_mean_anomaly</span> <span class="o">=</span> <span class="n">sst_anomaly</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="s1">&#39;lat&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="s1">&#39;lon&#39;</span><span class="p">)</span>
+<span class="n">sst_smooth</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">sst_mean_anomaly</span><span class="p">)</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="n">window</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">5</span><span class="o">-</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">values</span>
+<span class="n">sst_smooth</span> <span class="o">=</span> <span class="n">sst_smooth</span><span class="p">[</span><span class="o">~</span><span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">sst_smooth</span><span class="p">)]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sst_max</span> <span class="o">=</span> <span class="n">sst_smooth</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+<span class="n">sst_2max</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">partition</span><span class="p">(</span><span class="n">sst_smooth</span><span class="o">.</span><span class="n">flatten</span><span class="p">(),</span> <span class="o">-</span><span class="mi">2</span><span class="p">)[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">sst_min</span> <span class="o">=</span> <span class="n">sst_smooth</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+<span class="n">sst_2min</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">partition</span><span class="p">(</span><span class="n">sst_smooth</span><span class="o">.</span><span class="n">flatten</span><span class="p">(),</span> <span class="mi">1</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>There are more information on the Xarray functions in the documentation (<a class="reference external" href="https://docs.xarray.dev/en/stable/user-guide/index.html">https://docs.xarray.dev/en/stable/user-guide/index.html</a>). Try around with the functions you have already seen in other Jupyternotebooks from this course, especially the functions <code class="docutils literal notranslate"><span class="pre">.sel()</span></code>, <code class="docutils literal notranslate"><span class="pre">slice()</span></code>, <code class="docutils literal notranslate"><span class="pre">.resample(time='M')</span></code>, <code class="docutils literal notranslate"><span class="pre">.resample(time='Y')</span></code>, <code class="docutils literal notranslate"><span class="pre">groupby('time.month')</span></code>, <code class="docutils literal notranslate"><span class="pre">mean()</span></code>.</p>
+<ol class="simple">
+<li><p>Think about the function <code class="docutils literal notranslate"><span class="pre">.sel()</span></code> and apply the <code class="docutils literal notranslate"><span class="pre">slice()</span></code> function to the extent of the Nino3.4 region (5N-5S, 170W-120W)</p></li>
+<li><p>ds.analised_sst</p></li>
+<li><p>You can resample the DataArray with the function <code class="docutils literal notranslate"><span class="pre">.resample(time='Y')</span></code> and substitute die annual resampling <code class="docutils literal notranslate"><span class="pre">Y</span></code> to <code class="docutils literal notranslate"><span class="pre">M</span></code> (for month) and calculate the mean by applying <code class="docutils literal notranslate"><span class="pre">.mean('time')</span></code></p></li>
+<li><p>Calculate the average for each month of the year by applying <code class="docutils literal notranslate"><span class="pre">.groupby('time.month')</span></code> and <code class="docutils literal notranslate"><span class="pre">.mean('time')</span></code>. Then determine the anomalies by computing the difference between the resampled monthly data and the averaged monthly data. Here the dimensions are not equal, therefore use the function <code class="docutils literal notranslate"><span class="pre">groupby('time.month')</span></code> to the resampled monthly data again.</p></li>
+<li><p>Now you can apply the <code class="docutils literal notranslate"><span class="pre">mean()</span></code> function on the latitudes <code class="docutils literal notranslate"><span class="pre">lat</span></code> and longitudes <code class="docutils literal notranslate"><span class="pre">lon</span></code>.</p></li>
+<li><p>There are different ways to calculate the running window. You can do it from scratch or e.g. google any solution. One solution could be this:
+<code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">pandas</span> <span class="pre">as</span> <span class="pre">pd</span></code>
+<code class="docutils literal notranslate"><span class="pre">weighted</span> <span class="pre">=</span> <span class="pre">pd.Series(array).rolling(window=n).mean().iloc[n-1:].values</span></code>, with the anomaly array ‘array’ and ‘n’ as the size of the window.</p></li>
+</ol>
+</section>
+<section id="plotting-the-nino3-4-indice-against-other-variables">
+<h3>Plotting the Nino3.4 indice against other variables<a class="headerlink" href="#plotting-the-nino3-4-indice-against-other-variables" title="Permalink to this headline">#</a></h3>
+<p><strong>TODO</strong>: Now you can plot the anomaly against the SOI index. Also you can plot it against other vegetation and meteorologic variables in other areas of the earth (e.g. Net primary productivity in Southamerica or precipitation in Australia). Feel highly encouraged to try different variables and regions and be prepared to share your results in the next exercise.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">sst_mean_anomaly</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">sst_smooth</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x14c8fa347c10&gt;]
+</pre></div>
+</div>
+<img alt="_images/05-Anomalies_13_1.png" src="_images/05-Anomalies_13_1.png" />
+</div>
+</div>
+<p><img alt="SOI" src="https://climatedataguide.ucar.edu/sites/default/files/styles/extra_large/public/2022-03/oni.monthly.smoo_stro.png?itok=KX4FZyFw" /></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sst_anomaly</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;lon&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;lat&#39;</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="s1">&#39;time&#39;</span><span class="p">,</span> <span class="n">col_wrap</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">robust</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;xarray.plot.facetgrid.FacetGrid at 0x14c8fa310e80&gt;
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Error in callback &lt;function _draw_all_if_interactive at 0x14c8fe267f70&gt; (for post_execute):
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># GPP in South America</span>
+<span class="n">south_gpp</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">gross_primary_productivity</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">lat</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">60</span><span class="p">),</span> <span class="n">lon</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="o">-</span><span class="mi">85</span><span class="p">,</span> <span class="o">-</span><span class="mi">30</span><span class="p">))</span>
+<span class="n">south_gpp_res</span> <span class="o">=</span> <span class="n">south_gpp</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="s2">&quot;M&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="s1">&#39;time&#39;</span><span class="p">)</span>
+<span class="n">south_anomaly</span> <span class="o">=</span> <span class="n">south_gpp_res</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;time.month&quot;</span><span class="p">)</span> <span class="o">-</span> <span class="n">south_gpp_res</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;time.month&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="s2">&quot;time&quot;</span><span class="p">)</span>
+<span class="n">south_mean_anomaly</span> <span class="o">=</span> <span class="n">south_anomaly</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="s1">&#39;lat&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="s1">&#39;lon&#39;</span><span class="p">)</span>
+<span class="n">south_smooth</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">south_mean_anomaly</span><span class="p">)</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="n">window</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">5</span><span class="o">-</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">values</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Precipitation in Australia</span>
+<span class="n">aus_prec</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">precipitation</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">lat</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="o">-</span><span class="mi">45</span><span class="p">),</span> <span class="n">lon</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="mi">110</span><span class="p">,</span> <span class="mi">155</span><span class="p">))</span>
+<span class="n">aus_prec_res</span> <span class="o">=</span> <span class="n">aus_prec</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="s2">&quot;M&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="s1">&#39;time&#39;</span><span class="p">)</span>
+<span class="n">aus_anomaly</span> <span class="o">=</span> <span class="n">aus_prec_res</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;time.month&quot;</span><span class="p">)</span> <span class="o">-</span> <span class="n">aus_prec_res</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;time.month&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="s2">&quot;time&quot;</span><span class="p">)</span>
+<span class="n">aus_mean_anomaly</span> <span class="o">=</span> <span class="n">aus_anomaly</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="s1">&#39;lat&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="s1">&#39;lon&#39;</span><span class="p">)</span>
+<span class="n">aus_smooth</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">aus_mean_anomaly</span><span class="p">)</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="n">window</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">5</span><span class="o">-</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">values</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># to achive same list lenghts doing smoothing for sst again</span>
+<span class="n">sst_smooth</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">sst_mean_anomaly</span><span class="p">)</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="n">window</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">5</span><span class="o">-</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">values</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">aus_smooth</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Precipitation in Australia&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">sst_smooth</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Analysed sea surface temperature at EL NINO 3.4&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">south_smooth</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;GPP in South America&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Time in a 5-month window&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x148a20218a00&gt;
+</pre></div>
+</div>
+<img alt="_images/05-Anomalies_18_1.png" src="_images/05-Anomalies_18_1.png" />
+</div>
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "fin"
+        },
+        kernelOptions: {
+            kernelName: "fin",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'fin'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="04-Computation-concepts.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Computation concepts</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="06-Global_correlation_maps.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Teleconnections: Global correlation maps with the Nino3.4 index</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Louis Trinkle<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

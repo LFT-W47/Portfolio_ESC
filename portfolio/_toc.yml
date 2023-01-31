@@ -1,0 +1,17 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: first
+- file: second
+- file: third
+- file: fourth
+- file: 01_intro_ext
+- file: 02_Energy-balance
+- file: 03-Introduction-to-xarray
+- file: 04-Computation-concepts
+- file: 05-Anomalies
+- file: 06-Global_correlation_maps
+- file: 08-Climate_classifications

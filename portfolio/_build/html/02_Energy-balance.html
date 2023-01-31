@@ -1,0 +1,672 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>The Energy balance of the earth &#8212; Portfolio Earth System Components Winter term 2022/23</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Xarray and how to explore variables in the Earth System Data Cube" href="03-Introduction-to-xarray.html" />
+    <link rel="prev" title="Introduction to JupyterLab, Python and Conda" href="01_intro_ext.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/pic.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Portfolio Earth System Components Winter term 2022/23</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to the Portfolio for the course Earth System Components Winter term 2022/23
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="first.html">
+   Question 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="second.html">
+   How does ozone interact with UV radiation i.e. what is the physical-chemical reaction behind that interaction?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="third.html">
+   NAO &amp; AO
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="fourth.html">
+   What mechanisms explain the existence of ocean gyres?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="01_intro_ext.html">
+   Introduction to JupyterLab, Python and Conda
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   The Energy balance of the earth
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03-Introduction-to-xarray.html">
+   Xarray and how to explore variables in the Earth System Data Cube
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04-Computation-concepts.html">
+   Computation concepts
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05-Anomalies.html">
+   Anomalies
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06-Global_correlation_maps.html">
+   Teleconnections: Global correlation maps with the Nino3.4 index
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08-Climate_classifications.html">
+   Climate classifications
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/LFT-W47/Portfolio_ESC/master?urlpath=tree/docs/02_Energy-balance.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/LFT-W47/Portfolio_ESC"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/LFT-W47/Portfolio_ESC/issues/new?title=Issue%20on%20page%20%2F02_Energy-balance.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/02_Energy-balance.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-naked-planet-model">
+   The naked planet model
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>The Energy balance of the earth</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-naked-planet-model">
+   The naked planet model
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="the-energy-balance-of-the-earth">
+<h1>The Energy balance of the earth<a class="headerlink" href="#the-energy-balance-of-the-earth" title="Permalink to this headline">#</a></h1>
+<section id="the-naked-planet-model">
+<h2>The naked planet model<a class="headerlink" href="#the-naked-planet-model" title="Permalink to this headline">#</a></h2>
+<p>We want to calculate the radiation model of a simplified planet without greenhouse gases, the so called naked planet model<span class="math notranslate nohighlight">\(^\ast\)</span>. The temperature of this planet is determined by balancing energy fluxes in and out of this planet. The energy that comes to the planet is provided by the sun. The planet itself radiates energy to an extent that depends on its temperature. The planet is characterised by a layer of water what serves as a buffer and stores energy until an equilibrium is reached and incoming and outgoing fluxes are balanced.</p>
+<p>The incoming solarheat is determined by <span class="math notranslate nohighlight">\(\frac{L (1- \alpha)}{4}\)</span>, with the solar constant <span class="math notranslate nohighlight">\(L\)</span> (which is not a constant!) and the albedo <span class="math notranslate nohighlight">\(\alpha\)</span> (between 0 and 1) of the planet. The factor 4 can be derived from the relation between the shadow of the planet with an area of <span class="math notranslate nohighlight">\(\pi r^2\)</span> to the total surface of <span class="math notranslate nohighlight">\(4 \pi r^2\)</span>.</p>
+<p>The outgoing heat depends on the temperature of the planet according to the Stefan-Boltzmann law, which is <span class="math notranslate nohighlight">\(\epsilon \cdot \sigma \cdot T^4\)</span>, with the emissivity of the planet (between 0 and 1, with 1 if the object is a black body that absorbs all electromagnetic radiation), the Stefan-Boltzmann constant <span class="math notranslate nohighlight">\(\sigma\)</span> = 5.67<span class="math notranslate nohighlight">\(\cdot\)</span> 10<span class="math notranslate nohighlight">\(^{-8}\frac{W}{m^2 K^4}\)</span>, and the current temperature of the planet <span class="math notranslate nohighlight">\(T\)</span>.</p>
+<p>Depending on the initial temperature of the planet, the incoming and out-going energy fluxes are not balanced and result in a warming (or cooling) of the planet. If we start with an initial temperature of 0K, the planet will absorb more energy than it emits, thus the total internal energy of the planet rises. The energy is stored by a layer of water with a predefined depth.</p>
+<p><span class="math notranslate nohighlight">\(^\ast\)</span>An example of the naked planet model is also given in the <a class="reference external" href="https://www.coursera.org/lecture/global-warming/naked-planet-climate-model-xWZsI">Coursera Course on Global warming</a>, if you would like to use additional materials.</p>
+<p><strong>TODO</strong>: Please import the libraries <code class="docutils literal notranslate"><span class="pre">numpy</span></code> and <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>TODO</strong>: Define all the important variables: The solar constant, albedo of the planet, depth of the water layer, specific heat capacity of water, heat capacity of the water column (we canceled out the area from both, incoming and out-going energy fluxes, and thereby only consider a column of 1m<span class="math notranslate nohighlight">\(^2\)</span> (keep in mind the specific heat capacity of water is in [J/g K]), epsilon and sigma. Add all units (and any additional infos you need) with a command <code class="docutils literal notranslate"><span class="pre">#</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sc</span> <span class="o">=</span> <span class="mi">1361</span> <span class="c1"># kw/m^2</span>
+<span class="n">albedo</span> <span class="o">=</span> <span class="mf">0.33</span> <span class="c1"># estimation</span>
+<span class="n">wat_depth</span> <span class="o">=</span> <span class="mi">3940</span> <span class="c1"># average in m</span>
+<span class="n">wat_dens</span> <span class="o">=</span> <span class="mi">997</span> <span class="c1"># kg^3/m</span>
+<span class="n">wat_cap</span> <span class="o">=</span> <span class="mf">4.184</span> <span class="c1"># J/g * K</span>
+<span class="n">cap</span> <span class="o">=</span> <span class="n">wat_depth</span> <span class="o">*</span> <span class="n">wat_cap</span> <span class="o">*</span> <span class="mi">10</span><span class="o">**</span><span class="mi">3</span> <span class="o">*</span> <span class="n">wat_dens</span>
+<span class="n">eps</span> <span class="o">=</span> <span class="mf">1.</span>
+<span class="n">sig</span> <span class="o">=</span> <span class="mf">5.67</span> <span class="o">*</span> <span class="p">(</span><span class="mi">10</span><span class="o">**-</span><span class="mi">8</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">l</span> <span class="o">=</span> <span class="mi">1366</span>   <span class="c1"># W/m2</span>
+<span class="n">albedo</span> <span class="o">=</span> <span class="mf">0.3</span> <span class="c1"># []</span>
+<span class="n">h</span> <span class="o">=</span> <span class="mi">4000</span>   <span class="c1"># depth of the ocean in meters</span>
+<span class="n">rho</span> <span class="o">=</span> <span class="mi">1000</span> <span class="c1"># density of water [kg/m3]</span>
+<span class="n">capacity_water</span> <span class="o">=</span> <span class="mf">4.186</span> <span class="c1"># heat capacity of water in [J/g K]</span>
+<span class="n">capacity</span> <span class="o">=</span> <span class="n">h</span> <span class="o">*</span> <span class="n">capacity_water</span> <span class="o">*</span> <span class="mi">10</span><span class="o">**</span><span class="mi">3</span> <span class="o">*</span> <span class="n">rho</span> <span class="c1"># J/m2 K # specific heat capacity of water times density of water</span>
+<span class="n">epsilon</span> <span class="o">=</span> <span class="mf">1.</span> <span class="c1"># []</span>
+<span class="n">sigma</span> <span class="o">=</span> <span class="mf">5.67E-8</span>  <span class="c1"># W/(m2 K4)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>We want to track the temperature changes over time, starting with an inital temperature, e.g. t<span class="math notranslate nohighlight">\(_0\)</span> = 0K. After sufficient timesteps it will approach an equilibrium.</p>
+<p><strong>TODO</strong>: Create an array of <em>time</em> with np.arange(start, end, step), starting with <span class="math notranslate nohighlight">\(t_0\)</span> = 0, end with 1500 and timesteps of 20 years. You can choose also other timeperiods and -steps, but keep in mind that some combination may not work because they are numerically unstable</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">time</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1500</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">step</span> <span class="o">=</span> <span class="mi">20</span> <span class="c1"># in years</span>
+<span class="n">time</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1500</span><span class="p">,</span> <span class="n">step</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The heat capacity of the planet is set by a layer of water that absorbs the incoming energy and thus changes its temperature. It depends on the specific heat capacity of water (4.186 [ J g<span class="math notranslate nohighlight">\(^{-1}\)</span>K<span class="math notranslate nohighlight">\(^{-1}\)</span> ], the depth of the water layer in [m] and the density of water.</p>
+<p>As energy is added to the planet, the heat content is changing as a function of time by the incoming and out-going fluxes:</p>
+<p><span class="math notranslate nohighlight">\(\frac{d(heat\_content)}{dt}\)</span> = <span class="math notranslate nohighlight">\(\frac{L (1- \alpha)}{4}\)</span> - <span class="math notranslate nohighlight">\(\sigma \cdot \epsilon \cdot T^4\)</span>.</p>
+<p>If the first term is larger than the second, the heat content will increase. If the second term is larger, the heat content will decrease.</p>
+<p>The heat content of a matter is related to the temperature by the heat capacity:</p>
+<p>T(K) = <span class="math notranslate nohighlight">\(\frac{\textrm{heat_content}[J/m^2]}{\textrm{heat_capacity} [J/m^2  K]}\)</span>.</p>
+<p>Heat capacity is the amount of heat required to raise the temperature of an object by 1K.</p>
+<p>We can solve this numerically:</p>
+<p>heat_content(t+1) = heat_content(t) + <span class="math notranslate nohighlight">\(\frac{d(heat\_content)}{dt}\)</span> <span class="math notranslate nohighlight">\(\cdot\)</span> timestep</p>
+<p>The incoming radiation will stay constant throughout the simulation. The outgoing radiation is governed by the temperature that is updated in each timestep.</p>
+<p><strong>TODO</strong>: We will start with a heat content and temperature of the planet of 0 J/m<span class="math notranslate nohighlight">\(^2\)</span>K and 0K respectively. The variable heat_content will be overwritten in each step of a for-loop, while we want to keep track of the temperature by generating a list and appending the lastest termperature in each time step. Add the equation of the incoming and out-going energy fluxes to the for-loop. Keep in mind, that each timestep is in years and we need a factor to transfere years to seconds.</p>
+<p>Hint: list[-1] calls the last item of a list</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">heat_content</span> <span class="o">=</span> <span class="mf">0.</span>
+<span class="n">temp</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="n">heat_in</span> <span class="o">=</span>  <span class="n">sc</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">albedo</span><span class="p">)</span><span class="o">/</span><span class="mi">4</span> <span class="c1"># add here the equation of incoming energy flux</span>
+<span class="n">heat_out</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">heat_content</span> <span class="o">=</span>  <span class="n">cap</span> <span class="o">*</span> <span class="n">temp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">time</span><span class="p">:</span>   
+    <span class="n">heat_out</span> <span class="o">=</span> <span class="n">eps</span> <span class="o">*</span> <span class="n">sig</span> <span class="o">*</span> <span class="nb">pow</span><span class="p">(</span><span class="n">temp</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="mi">4</span><span class="p">)</span><span class="c1"># add here the equation of the out-going energy fluxes</span>
+    <span class="n">heat_content_per_dt</span> <span class="o">=</span> <span class="n">heat_in</span> <span class="o">-</span> <span class="n">heat_out</span>
+    <span class="n">heat_content</span> <span class="o">=</span> <span class="n">heat_content</span> <span class="o">+</span> <span class="p">(</span><span class="n">heat_content_per_dt</span> \
+                    <span class="o">*</span> <span class="mi">20</span> <span class="o">*</span> <span class="mf">3.14E7</span><span class="p">)</span>
+    <span class="c1">#print(i, temp[-1])</span>
+    <span class="n">temp</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">heat_content</span><span class="o">/</span> <span class="n">cap</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">heat_content</span> <span class="o">=</span> <span class="mf">0.</span>
+<span class="n">temp</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="n">heat_in</span> <span class="o">=</span> <span class="n">l</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">albedo</span><span class="p">)</span><span class="o">/</span><span class="mi">4</span>
+<span class="n">heat_out</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">heat_content</span> <span class="o">=</span>  <span class="n">capacity</span> <span class="o">*</span> <span class="n">temp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">time</span><span class="p">:</span>   
+    <span class="n">heat_out</span> <span class="o">=</span> <span class="n">epsilon</span> <span class="o">*</span> <span class="n">sigma</span> <span class="o">*</span> <span class="nb">pow</span><span class="p">(</span><span class="n">temp</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="mi">4</span><span class="p">)</span>
+    <span class="n">heat_content_per_dt</span> <span class="o">=</span> <span class="n">heat_in</span> <span class="o">-</span> <span class="n">heat_out</span>
+    <span class="n">heat_content</span> <span class="o">=</span> <span class="n">heat_content</span> <span class="o">+</span> <span class="p">(</span><span class="n">heat_content_per_dt</span> \
+                    <span class="o">*</span> <span class="n">step</span> <span class="o">*</span> <span class="mf">3.14E7</span><span class="p">)</span>
+    <span class="c1">#print(i, temp[-1])</span>
+    <span class="n">temp</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">heat_content</span><span class="o">/</span> <span class="n">capacity</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>TODO</strong>: Plot the calculated temperature curve over time, e.g. with matplotlib.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Time&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Temp&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Energy Balance&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">temp</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x14bd1e53c430&gt;]
+</pre></div>
+</div>
+<img alt="_images/02_Energy-balance_14_1.png" src="_images/02_Energy-balance_14_1.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#plt.xlabel(&#39;Time [y]&#39;)</span>
+<span class="c1">#plt.ylabel(&#39;Temerature [K]&#39;)</span>
+
+<span class="c1">#plt.title(&#39;The naked planet model&#39;)</span>
+<span class="c1">#plt.plot(time, temp[1:])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>TODO</strong> : Imagine the albedo decreases by 0.03. How does this changes the temperature? Add the new temperature curve to your plot.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">albedo</span> <span class="o">=</span> <span class="mf">0.36</span>
+
+<span class="n">heat_content</span> <span class="o">=</span> <span class="mf">0.</span>
+<span class="n">temp</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="n">heat_in</span> <span class="o">=</span>  <span class="n">sc</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">albedo</span><span class="p">)</span><span class="o">/</span><span class="mi">4</span> <span class="c1"># add here the equation of incoming energy flux</span>
+<span class="n">heat_out</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">heat_content</span> <span class="o">=</span>  <span class="n">cap</span> <span class="o">*</span> <span class="n">temp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">time</span><span class="p">:</span>   
+    <span class="n">heat_out</span> <span class="o">=</span> <span class="n">eps</span> <span class="o">*</span> <span class="n">sig</span> <span class="o">*</span> <span class="nb">pow</span><span class="p">(</span><span class="n">temp</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="mi">4</span><span class="p">)</span><span class="c1"># add here the equation of the out-going energy fluxes</span>
+    <span class="n">heat_content_per_dt</span> <span class="o">=</span> <span class="n">heat_in</span> <span class="o">-</span> <span class="n">heat_out</span>
+    <span class="n">heat_content</span> <span class="o">=</span> <span class="n">heat_content</span> <span class="o">+</span> <span class="p">(</span><span class="n">heat_content_per_dt</span> \
+                    <span class="o">*</span> <span class="mi">20</span> <span class="o">*</span> <span class="mf">3.14E7</span><span class="p">)</span>
+    <span class="c1">#print(i, temp[-1])</span>
+    <span class="n">temp</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">heat_content</span><span class="o">/</span> <span class="n">cap</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Time&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Temp&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Energy Balance&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">temp</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x14bd1c445af0&gt;]
+</pre></div>
+</div>
+<img alt="_images/02_Energy-balance_18_1.png" src="_images/02_Energy-balance_18_1.png" />
+</div>
+</div>
+<p><strong>Question</strong>: What would be necessary to add the effect of greenhouse gases in the atmosphere to this model? How could it be implemented? How would this affect the temperature?</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "fin"
+        },
+        kernelOptions: {
+            kernelName: "fin",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'fin'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="01_intro_ext.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Introduction to JupyterLab, Python and Conda</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="03-Introduction-to-xarray.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Xarray and how to explore variables in the Earth System Data Cube</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Louis Trinkle<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
